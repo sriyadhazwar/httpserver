@@ -1,0 +1,73 @@
+
+<head>
+		<title>Backenders CH 3 Top 1</title>
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+
+	<h1>Hello Athoners</h1>
+	<div
+    class="p-5 text-center bg-image"
+    style="
+      background-image: url('https://mediacdn.cincopa.com/v2/1136154/1!xywFAAAAAAgH3A/0/athoners.jpg');
+      height: 524px;
+	  width: 916px;
+    "
+  >
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+      <div class="d-flex justify-content-center align-items-center h-300">
+        <div class="text-white">
+                   
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<h5>GET dari source index.html file</h5>
+
+	<p><b>Install ExpressJS</b><br /><i>npm install express</i></p>
+
+	<p><b>index.js</b><br />Save file html ke <b>index.js</b></p>
+<h2>Cara</h2>
+	<pre>
+	var express = require('express');
+	var app = express();
+	var path = require('path');
+
+	// viewed at http://localhost:3000
+	app.get('/', function(req, res) {
+	    res.sendFile(path.join(__dirname + '/index.html'));
+	});
+	
+
+	app.listen(3000);
+	</pre>
+
+	<p><b>index.html</b><br />Buat html file <b>index.html</b> Tulis <h3> Hello World, BE-CH 3 Top 1</h3>.</p>
+
+	<p><b>In command prompt</b><br />
+	Start the local host by typing the following:<br />
+	<i>node index.js</i></p>
+
+
+</div>
+<div>
+	<form action="http://localhost:4000/">
+	<p><button type="submit">Json Parsing</button></p>
+ </form>
+</div>
+ 
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$("document").ready(function () {
+	alert("Akses di Approve : 200 OK");
+});
+</script>

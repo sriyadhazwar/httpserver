@@ -1,0 +1,21 @@
+{
+  "name": "httpservertest",
+  "version": "0.0.0",
+  "description": "Using ExpressJS to serve an index.html file in a Node js application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "Azwar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "~4.10.2"
+  },
+  "keywords": []
+}
